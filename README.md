@@ -62,31 +62,6 @@ universe-print/
 ├── admin.php → Page d’administration (gestion produits)
 ├── admi.php → (optionnel) Gestion des réservations
 └── README.md → Documentation du projet
-
----
-
-## 🗄️ Structure de la base de données
-
-### Table `users`
-| Colonne | Type | Description |
-|----------|------|-------------|
-| id | INT (PK) | Identifiant unique |
-| prenom | VARCHAR(100) | Prénom de l’utilisateur |
-| email | VARCHAR(150) | Adresse email |
-| mot_de_passe | VARCHAR(255) | Mot de passe haché |
-| role | ENUM('client','admin') | Rôle de l’utilisateur |
-
-### Table `products`
-| Colonne | Type | Description |
-|----------|------|-------------|
-| id | INT (PK) | Identifiant unique |
-| nom | VARCHAR(100) | Nom du produit |
-| type | VARCHAR(100) | Type d’inscription ou produit |
-| description | TEXT | Détails du produit |
-| prix | DECIMAL(10,2) | Prix du produit |
-| image | BLOB / VARCHAR | Image du produit |
-| date_ajout | DATETIME | Date d’ajout automatique |
-
 ---
 👩🏽‍💻 Auteur
 
